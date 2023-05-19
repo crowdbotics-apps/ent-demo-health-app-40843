@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from 'react';
+import { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 const patientData = [{
   id: 1,
@@ -29,8 +29,6 @@ const patientData = [{
   medication: "Percocet",
   date: "2021-09-25"
 }];
-
-const onPress = () => console.log("pressed");
 
 const PatientRecord = ({
   patient,
