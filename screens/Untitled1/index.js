@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
@@ -12,10 +13,12 @@ const Untitled1 = () => {
       position: "relative",
       flex: 1
     }}>
-        
-      <Pressable onPress={() => {
+        <Pressable onPress={() => {
         navigation.navigate("Untitled3");
-      }}><ImageBackground style={styles.CEsGsyIs} source={require("./crowdbotics-tr-bg.png")} resizeMode="cover"></ImageBackground></Pressable></ScrollView>
+      }}>
+          <ImageBackground style={styles.CEsGsyIs} source={require("./crowdbotics-tr-bg.png")} resizeMode="cover"></ImageBackground>
+        </Pressable>
+      </ScrollView>
     </SafeAreaView>;
 };
 
