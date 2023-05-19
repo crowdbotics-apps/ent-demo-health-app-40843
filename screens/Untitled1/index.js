@@ -1,7 +1,10 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled1 = () => {
+  const navigation = useNavigation();
   return <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={{
       backgroundColor: "#f0f0f1",
@@ -10,7 +13,9 @@ const Untitled1 = () => {
       flex: 1
     }}>
         
-      <ImageBackground style={styles.CEsGsyIs} source={require("./crowdbotics-tr-bg.png")} resizeMode="cover"></ImageBackground></ScrollView>
+      <Pressable onPress={() => {
+        navigation.navigate("Untitled3");
+      }}><ImageBackground style={styles.CEsGsyIs} source={require("./crowdbotics-tr-bg.png")} resizeMode="cover"></ImageBackground></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
