@@ -1,33 +1,35 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import React, { useState } from "react";
+import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 const patientData = [{
   id: 1,
-  name: 'John Doe',
+  name: "John Doe",
   age: 35,
-  gender: 'Male',
-  image: 'https://tinyurl.com/42evm3m3',
-  diagnosis: 'Flu',
-  medication: 'Ibuprofen',
-  date: '2021-10-01'
+  gender: "Male",
+  image: "https://tinyurl.com/42evm3m3",
+  diagnosis: "Flu",
+  medication: "Ibuprofen",
+  date: "2021-10-01"
 }, {
   id: 2,
-  name: 'Jane Smith',
+  name: "Jane Smith",
   age: 45,
-  gender: 'Female',
-  image: 'https://tinyurl.com/42evm3m3',
-  diagnosis: 'Migraine',
-  medication: 'Aspirin',
-  date: '2021-09-28'
+  gender: "Female",
+  image: "https://tinyurl.com/42evm3m3",
+  diagnosis: "Migraine",
+  medication: "Aspirin",
+  date: "2021-09-28"
 }, {
   id: 3,
-  name: 'Bob Johnson',
+  name: "Bob Johnson",
   age: 50,
-  gender: 'Male',
-  image: 'https://tinyurl.com/42evm3m3',
-  diagnosis: 'Broken Arm',
-  medication: 'Percocet',
-  date: '2021-09-25'
+  gender: "Male",
+  image: "https://tinyurl.com/42evm3m3",
+  diagnosis: "Broken Arm",
+  medication: "Percocet",
+  date: "2021-09-25"
 }];
+
+const onPress = () => console.log('pressed');
 
 const PatientRecord = ({
   patient,
@@ -55,8 +57,12 @@ const PatientDetails = ({
         <Text style={styles.patientName}>{patient.name}</Text>
         <Text style={styles.patientAge}>{patient.age} years old</Text>
         <Text style={styles.patientGender}>{patient.gender}</Text>
-        <Text style={styles.patientDiagnosis}>Diagnosis: {patient.diagnosis}</Text>
-        <Text style={styles.patientMedication}>Medication: {patient.medication}</Text>
+        <Text style={styles.patientDiagnosis}>
+          Diagnosis: {patient.diagnosis}
+        </Text>
+        <Text style={styles.patientMedication}>
+          Medication: {patient.medication}
+        </Text>
         <Text style={styles.patientDate}>Date: {patient.date}</Text>
       </View>
     </View>;
@@ -82,31 +88,31 @@ const PatientScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: "#fff"
   },
   topBar: {
     height: 80,
-    backgroundColor: '#007AFF',
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: "#007AFF",
+    justifyContent: "center",
+    alignItems: "center"
   },
   title: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 24,
-    fontWeight: 'bold'
+    fontWeight: "bold"
   },
   content: {
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: "row"
   },
   patientList: {
-    width: '25%',
-    backgroundColor: '#F5F5F5',
+    width: "25%",
+    backgroundColor: "#F5F5F5",
     padding: 20
   },
   patientRecord: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 20
   },
   patientImage: {
@@ -120,34 +126,34 @@ const styles = StyleSheet.create({
   },
   patientName: {
     fontSize: 16,
-    fontWeight: 'bold'
+    fontWeight: "bold"
   },
   patientAge: {
     fontSize: 14,
-    color: '#666'
+    color: "#666"
   },
   patientDetails: {
-    width: '75%',
+    width: "75%",
     padding: 20
   },
   patientGender: {
     fontSize: 14,
-    color: '#666',
+    color: "#666",
     marginBottom: 10
   },
   patientDiagnosis: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 10
   },
   patientMedication: {
     fontSize: 14,
-    color: '#666',
+    color: "#666",
     marginBottom: 10
   },
   patientDate: {
     fontSize: 14,
-    color: '#666'
+    color: "#666"
   }
 });
 export default PatientScreen;
