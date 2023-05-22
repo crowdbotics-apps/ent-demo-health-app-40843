@@ -8,7 +8,12 @@ const patientData = [{
   image: "https://tinyurl.com/42evm3m3",
   diagnosis: "aHUS",
   medication: "Alexion",
-  date: "2021-10-01"
+  date: "2021-10-01",
+  lastAppointment: "2023-03-24",
+  physicianNotes: {
+    generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
+    recNextAppointment: "2023-06-16"
+  }
 }, {
   id: 2,
   name: "Jane Smith",
@@ -17,7 +22,12 @@ const patientData = [{
   image: "https://tinyurl.com/42evm3m3",
   diagnosis: "neuromyelitis optica spectrum disorder (NMOSD)",
   medication: "Alexion",
-  date: "2021-09-28"
+  date: "2021-09-28",
+  lastAppointment: "2023-02-12",
+  physicianNotes: {
+    generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
+    recNextAppointment: "2023-05-01"
+  }
 }, {
   id: 3,
   name: "Stephen Johansen",
@@ -26,16 +36,26 @@ const patientData = [{
   image: "https://tinyurl.com/42evm3m3",
   diagnosis: "lysosomal acid lipase deficiency (LAL-D)",
   medication: "Alexion",
-  date: "2021-09-25"
+  date: "2021-09-25",
+  lastAppointment: "2023-01-03",
+  physicianNotes: {
+    generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
+    recNextAppointment: "2023-04-01"
+  }
 }, {
   id: 4,
   name: "Stacy Lee",
   age: 61,
   gender: "Female",
   image: "https://tinyurl.com/42evm3m3",
-  diagnosis: "lysosomal acid lipase deficiency (LAL-D)",
+  diagnosis: "generalized Myasthenia Gravis (gMG)",
   medication: "Alexion",
-  date: "2021-09-25"
+  date: "2021-09-25",
+  lastAppointment: "2023-05-01",
+  physicianNotes: {
+    generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
+    recNextAppointment: "2023-09-01"
+  }
 }, {
   id: 5,
   name: "Gil Faisan",
@@ -44,16 +64,26 @@ const patientData = [{
   image: "https://tinyurl.com/42evm3m3",
   diagnosis: "paroxysmal nocturnal hemoglobinuria (PNH)",
   medication: "Alexion",
-  date: "2021-09-25"
+  date: "2021-09-25",
+  lastAppointment: "2023-04-04",
+  physicianNotes: {
+    generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
+    recNextAppointment: "2023-07-11"
+  }
 }, {
   id: 6,
   name: "Loretta Alvarez",
   age: 29,
   gender: "Female",
   image: "https://tinyurl.com/42evm3m3",
-  diagnosis: "paroxysmal nocturnal hemoglobinuria (PNH)",
+  diagnosis: "hypophosphatasia (HPP)",
   medication: "Alexion",
-  date: "2021-09-25"
+  date: "2021-09-25",
+  lastAppointment: "2023-03-12",
+  physicianNotes: {
+    generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
+    recNextAppointment: "2023-06-23"
+  }
 }];
 
 const PatientRecord = ({
@@ -67,6 +97,7 @@ const PatientRecord = ({
       <View style={styles.patientInfo}>
         <Text style={styles.patientName}>{patient.name}</Text>
         <Text style={styles.patientAge}>{patient.age} years old</Text>
+        <Text style={styles.patientAge}>{patient.diagnosis}</Text>
       </View>
     </TouchableOpacity>;
 };
@@ -89,6 +120,10 @@ const PatientDetails = ({
           Medication: {patient.medication}
         </Text>
         <Text style={styles.patientDate}>Date: {patient.date}</Text>
+        <Text style={styles.lastAppointment}>
+          Date of last appointment:
+          {patient.lastAppointment}
+        </Text>
       </View>
     </View>;
 };
@@ -179,6 +214,12 @@ const styles = StyleSheet.create({
   patientDate: {
     fontSize: 14,
     color: "#666"
+  },
+  lastAppointment: {
+    fontSize: 14,
+    color: "#666",
+    marginBottom: 10,
+    marginTop: 10
   }
 });
 export default PatientScreen;
