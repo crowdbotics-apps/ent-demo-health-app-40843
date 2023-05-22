@@ -124,6 +124,8 @@ const PatientDetails = ({
           Date of last appointment:
           {patient.lastAppointment}
         </Text>
+        <Text style={styles.physicianNotesHeader}>Physician Notes: </Text>
+        <Text style={styles.physicianNotes}>{patient.physicianNotes.generalNotes}</Text>
       </View>
     </View>;
 };
@@ -216,6 +218,19 @@ const styles = StyleSheet.create({
     color: "#666"
   },
   lastAppointment: {
+    fontSize: 14,
+    color: "#666",
+    marginBottom: 10,
+    marginTop: 10
+  },
+  physicianNotesHeader: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#666",
+    marginBottom: 10,
+    marginTop: 10
+  },
+  physicianNotes: {
     fontSize: 14,
     color: "#666",
     marginBottom: 10,
