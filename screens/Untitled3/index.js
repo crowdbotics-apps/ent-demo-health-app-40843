@@ -1,3 +1,4 @@
+import React from "react";
 import { Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
@@ -168,9 +169,15 @@ const PatientScreen = () => {
           {patientData.map(patient => <PatientRecord key={patient.id} patient={patient} onPress={() => setSelectedPatient(patient)} />)}
           <View style={styles.aHncWoIq}>
             <Pressable onPress={() => {
-            navigation.navigate("Untitled4");
+            navigation.navigate("Untitled4", {
+              selectedPatient
+            });
           }}>
-              <Text style={styles.baIKEoGz}>{"Patient View"}</Text>
+              <Text style={styles.baIKEoGz}>
+                Patient View
+                  
+                
+              </Text>
             </Pressable>
           </View>
         </View>
