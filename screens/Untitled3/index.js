@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 const patientData = [{
   id: 1,
@@ -6,8 +6,8 @@ const patientData = [{
   age: 35,
   gender: "Male",
   image: "https://tinyurl.com/42evm3m3",
-  diagnosis: "Flu",
-  medication: "Ibuprofen",
+  diagnosis: "aHUS",
+  medication: "Alexion",
   date: "2021-10-01"
 }, {
   id: 2,
@@ -15,17 +15,44 @@ const patientData = [{
   age: 45,
   gender: "Female",
   image: "https://tinyurl.com/42evm3m3",
-  diagnosis: "Migraine",
-  medication: "Aspirin",
+  diagnosis: "neuromyelitis optica spectrum disorder (NMOSD)",
+  medication: "Alexion",
   date: "2021-09-28"
 }, {
   id: 3,
-  name: "Bob Johnson",
-  age: 50,
+  name: "Stephen Johansen",
+  age: 37,
   gender: "Male",
   image: "https://tinyurl.com/42evm3m3",
-  diagnosis: "Broken Arm",
-  medication: "Percocet",
+  diagnosis: "lysosomal acid lipase deficiency (LAL-D)",
+  medication: "Alexion",
+  date: "2021-09-25"
+}, {
+  id: 4,
+  name: "Stacy Lee",
+  age: 61,
+  gender: "Female",
+  image: "https://tinyurl.com/42evm3m3",
+  diagnosis: "lysosomal acid lipase deficiency (LAL-D)",
+  medication: "Alexion",
+  date: "2021-09-25"
+}, {
+  id: 5,
+  name: "Gil Faisan",
+  age: 43,
+  gender: "Male",
+  image: "https://tinyurl.com/42evm3m3",
+  diagnosis: "paroxysmal nocturnal hemoglobinuria (PNH)",
+  medication: "Alexion",
+  date: "2021-09-25"
+}, {
+  id: 6,
+  name: "Loretta Alvarez",
+  age: 29,
+  gender: "Female",
+  image: "https://tinyurl.com/42evm3m3",
+  diagnosis: "paroxysmal nocturnal hemoglobinuria (PNH)",
+  medication: "Alexion",
   date: "2021-09-25"
 }];
 
@@ -70,7 +97,7 @@ const PatientScreen = () => {
   const [selectedPatient, setSelectedPatient] = useState(patientData[0]);
   return <View style={styles.container}>
       <View style={styles.topBar}>
-        <Text style={styles.title}>Patient Records</Text>
+        <Text style={styles.title}>{"Provider View"}</Text>
       </View>
       <View style={styles.content}>
         <View style={styles.patientList}>
