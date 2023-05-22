@@ -10,6 +10,7 @@ const patientData = [{
   medication: "Alexion",
   date: "2021-10-01",
   lastAppointment: "2023-03-24",
+  phone: "555-501-1234",
   physicianNotes: {
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
     recNextAppointment: "2023-06-16"
@@ -24,6 +25,7 @@ const patientData = [{
   medication: "Alexion",
   date: "2021-09-28",
   lastAppointment: "2023-02-12",
+  phone: "555-501-1234",
   physicianNotes: {
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
     recNextAppointment: "2023-05-01"
@@ -38,6 +40,7 @@ const patientData = [{
   medication: "Alexion",
   date: "2021-09-25",
   lastAppointment: "2023-01-03",
+  phone: "555-501-1234",
   physicianNotes: {
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
     recNextAppointment: "2023-04-01"
@@ -52,6 +55,7 @@ const patientData = [{
   medication: "Alexion",
   date: "2021-09-25",
   lastAppointment: "2023-05-01",
+  phone: "555-501-1234",
   physicianNotes: {
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
     recNextAppointment: "2023-09-01"
@@ -66,6 +70,7 @@ const patientData = [{
   medication: "Alexion",
   date: "2021-09-25",
   lastAppointment: "2023-04-04",
+  phone: "555-501-1234",
   physicianNotes: {
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
     recNextAppointment: "2023-07-11"
@@ -80,6 +85,7 @@ const patientData = [{
   medication: "Alexion",
   date: "2021-09-25",
   lastAppointment: "2023-03-12",
+  phone: "555-501-1234",
   physicianNotes: {
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
     recNextAppointment: "2023-06-23"
@@ -116,6 +122,12 @@ const PatientDetails = ({
         <Text style={styles.patientDiagnosis}>
           Diagnosis: {patient.diagnosis}
         </Text>
+        <View>
+          {new Date(patient.physicianNotes.recNextAppointment) < new Date() ? <Text style={styles.warning}>
+              Please call the patient to schedule another appointment:{" "}
+              {patient.phone}
+            </Text> : null}
+        </View>
         <Text style={styles.patientMedication}>
           Medication: {patient.medication}
         </Text>
@@ -124,8 +136,14 @@ const PatientDetails = ({
           Date of last appointment:
           {patient.lastAppointment}
         </Text>
+        <Text style={styles.recNextAppt}>
+          Physician recommended next appointment:{" "}
+          {patient.physicianNotes.recNextAppointment}
+        </Text>
         <Text style={styles.physicianNotesHeader}>Physician Notes: </Text>
-        <Text style={styles.physicianNotes}>{patient.physicianNotes.generalNotes}</Text>
+        <Text style={styles.physicianNotes}>
+          {patient.physicianNotes.generalNotes}
+        </Text>
       </View>
     </View>;
 };
@@ -233,6 +251,18 @@ const styles = StyleSheet.create({
   physicianNotes: {
     fontSize: 14,
     color: "#666",
+    marginBottom: 10,
+    marginTop: 10
+  },
+  recNextAppt: {
+    fontSize: 14,
+    color: "#666",
+    marginBottom: 10,
+    marginTop: 10
+  },
+  warning: {
+    fontSize: 14,
+    color: "#FF0000",
     marginBottom: 10,
     marginTop: 10
   }
