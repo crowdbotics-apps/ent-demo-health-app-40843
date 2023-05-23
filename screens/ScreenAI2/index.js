@@ -119,7 +119,9 @@ const styles = StyleSheet.create({
     color: "#002E6C",
     fontWeight: "400",
     width: 200,
-    height: 28
+    height: 28,
+    marginBottom: 10,
+    marginLeft: 5
   },
   chevron: {
     height: 40,
