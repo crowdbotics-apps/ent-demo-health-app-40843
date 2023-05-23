@@ -67,9 +67,14 @@ const PatientPortalScreen = ({
             <Image source={{
             uri: "https://alexion.com/-/media/alexion_comredesign/images/realstories/ahus/erica/erica-01-w.jpg?mw=2048"
           }} style={styles.contentImage} />
-            <Text style={styles.zzxsPpis}>aHUS affects both adults and children. Patients with aHUS can face a lifelong risk of TMA, which may lead to sudden, catastrophic, and life-threatening damage to the kidney and other vital organs.1
-
-Historically, two thirds of patients with the most common mutation required kidney dialysis, had permanent kidney damage, or died within the first year after diagnosis, despite supportive care.2,3</Text>
+            <Text style={styles.zzxsPpis}>
+              aHUS affects both adults and children. Patients with aHUS can face
+              a lifelong risk of TMA, which may lead to sudden, catastrophic,
+              and life-threatening damage to the kidney and other vital organs.1
+              Historically, two thirds of patients with the most common mutation
+              required kidney dialysis, had permanent kidney damage, or died
+              within the first year after diagnosis, despite supportive care.2,3
+            </Text>
           </View>
         </View>
       </View>
@@ -127,7 +132,8 @@ const styles = StyleSheet.create({
   },
   contentImage: {
     height: 143,
-    width: 356
+    width: 356,
+    marginVertical: 15
   },
   columnLeft: {
     width: 400,
