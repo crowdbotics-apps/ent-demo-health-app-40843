@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     color: "#b52555",
     fontWeight: "700",
     width: 270,
-    height: 17
+    height: 20
   },
   logo: {
     width: 50,
@@ -100,11 +100,6 @@ const styles = StyleSheet.create({
   },
   columnRight: {
     width: 400
-  },
-  subtitle: {
-    fontSize: 18,
-    fontWeight: "bold",
-    marginBottom: 20
   },
   card: {
     backgroundColor: "#F5F5F5",
