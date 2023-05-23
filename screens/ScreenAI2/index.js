@@ -44,13 +44,12 @@ const PatientPortalScreen = ({
               <Text style={styles.activityDate}>August 18th</Text>
             </View>
           </View>
-          
         </View>
         <View style={styles.columnRight}>
-            <View style={styles.card}>
-              <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
-            </View>
+          <View style={styles.card}>
+            <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
           </View>
+        </View>
       </View>
     </ScrollView>;
 };
@@ -76,7 +75,9 @@ const styles = StyleSheet.create({
   },
   alexionHeader: {
     color: "#b52555",
-    fontWeight: "semi-bold"
+    fontWeight: "700",
+    width: 270,
+    height: 17
   },
   logo: {
     width: 50,
@@ -94,7 +95,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10
   },
   columnLeft: {
-    width: 400
+    width: 400,
+    marginRight: 15
   },
   columnRight: {
     width: 400
