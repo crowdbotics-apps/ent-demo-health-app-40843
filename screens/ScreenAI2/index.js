@@ -52,6 +52,22 @@ const PatientPortalScreen = ({
               <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.logo} />
             </View>
           </View>
+          <View style={styles.card}>
+
+              <Text style={styles.alexionSubHeader}>
+                What is atypical hemolytic uremic syndrome (aHUS)?
+              </Text>
+              <Text style={styles.zzxsPpis}>
+                aHUS is a genetic, chronic, ultra-rare disease that can
+                progressively damage vital organs, such as the kidneys. aHUS is
+                caused by genetic abnormalities that result in chronic
+                uncontrolled complement activation, leading to
+                complement-mediated thrombotic microangiopathy (TMA)—the
+                formation of blood clots in small blood vessels throughout the
+                body.1
+              </Text>
+
+          </View>
         </View>
       </View>
     </ScrollView>;
@@ -81,6 +97,12 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     width: 270,
     height: 20
+  },
+  alexionSubHeader: {
+    color: "#002E6C",
+    fontWeight: "400",
+    width: 355,
+    height: 28
   },
   logo: {
     width: 27,
@@ -127,7 +149,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   appointmentDate: {
-    color: "#A9A9A9"
+    color: "#787879"
   },
   activity: {
     flexDirection: "row",
@@ -142,6 +164,12 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: "row"
+  },
+  zzxsPpis: {
+    fontSize: 12,
+    width: 351,
+    height: 84,
+    color: "#787879"
   }
 });
 export default PatientPortalScreen;
