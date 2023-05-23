@@ -92,8 +92,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    display: "grid",
-    position: "absolute"
+    display: "grid"
   },
   header: {
     backgroundColor: "#002E6C",
