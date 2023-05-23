@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
 const PatientPortalScreen = ({
@@ -47,10 +48,10 @@ const PatientPortalScreen = ({
         </View>
         <View style={styles.columnRight}>
           <View style={styles.card}>
-            <View style={styles.row}>
+            <Pressable><View style={styles.row}>
               <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
               <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.logo} />
-            </View>
+            </View></Pressable>
           </View>
           <View style={styles.card}>
             <Text style={styles.alexionSubHeader}>
@@ -71,7 +72,8 @@ const PatientPortalScreen = ({
               aHUS affects both adults and children. Patients with aHUS can face
               a lifelong risk of TMA, which may lead to sudden, catastrophic,
               and life-threatening damage to the kidney and other vital organs.
-            </Text><Text style={styles.zzxsPpis}>
+            </Text>
+            <Text style={styles.zzxsPpis}>
               Historically, two thirds of patients with the most common mutation
               required kidney dialysis, had permanent kidney damage, or died
               within the first year after diagnosis, despite supportive care.2,3
@@ -179,8 +181,8 @@ const styles = StyleSheet.create({
   zzxsPpis: {
     fontSize: 12,
     width: 351,
-    height: 76,
-    color: "#787879"
+    color: "#787879",
+    margin: 5
   }
 });
 export default PatientPortalScreen;

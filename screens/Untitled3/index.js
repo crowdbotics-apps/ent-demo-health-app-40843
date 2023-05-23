@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 import { useState } from "react";
@@ -106,9 +105,7 @@ const PatientRecord = ({
   onPress
 }) => {
   return <TouchableOpacity style={styles.patientRecord} onPress={onPress}>
-      <Image source={{
-      uri: patient.image
-    }} style={styles.patientImage} />
+      <Image source={require("./account_circle_FILL0_wght400_GRAD0_opsz48.png")} style={styles.patientImage} />
       <View style={styles.patientInfo}>
         <Text style={styles.patientName}>{patient.name}</Text>
         <Text style={styles.patientAge}>{patient.age} years old</Text>
@@ -121,9 +118,7 @@ const PatientDetails = ({
   patient
 }) => {
   return <View style={styles.patientDetails}>
-      <Image source={{
-      uri: patient.image
-    }} style={styles.patientImage} />
+      <Image source={require("./account_circle_FILL0_wght400_GRAD0_opsz48.png")} style={styles.patientImage} />
       <View style={styles.patientInfo}>
         <Text style={styles.patientName}>{patient.name}</Text>
         <Text style={styles.patientAge}>{patient.age} years old</Text>
@@ -191,14 +186,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff"
-  },
-  topBar: {
-    backgroundColor: "#002E6C",
-    paddingTop: 10,
-    paddingBottom: 10,
-    paddingHorizontal: 20,
-    flexDirection: "row",
-    alignItems: "center"
   },
   title: {
     color: "#fff",
