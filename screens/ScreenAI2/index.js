@@ -1,4 +1,3 @@
-import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
 const PatientPortalScreen = ({
@@ -63,8 +62,12 @@ const PatientPortalScreen = ({
               caused by genetic abnormalities that result in chronic
               uncontrolled complement activation, leading to complement-mediated
               thrombotic microangiopathy (TMA)—the formation of blood clots in
-              small blood vessels throughout the body.1
+              small blood vessels throughout the body.
             </Text>
+            <Image source={{
+            uri: "https://alexion.com/-/media/alexion_comredesign/images/realstories/ahus/erica/erica-01-w.jpg?mw=2048"
+          }} style={styles.contentImage} />
+            
           </View>
         </View>
       </View>
@@ -119,6 +122,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingHorizontal: 20,
     paddingVertical: 10
+  },
+  contentImage: {
+    height: 143,
+    width: 356
   },
   columnLeft: {
     width: 400,
