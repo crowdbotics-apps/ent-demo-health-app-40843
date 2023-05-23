@@ -165,7 +165,7 @@ const PatientScreen = () => {
         <Image source={{
         uri: "https://pbs.twimg.com/profile_images/1542807211604320256/Gmm47qxe_400x400.png"
       }} style={styles.logo} />
-        <Text style={styles.title}>Patient Portal</Text>
+        <Text style={styles.title}>Provider Portal</Text>
       </View>
       <View style={styles.content}>
         <View style={styles.patientList}>
