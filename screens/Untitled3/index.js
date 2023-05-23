@@ -1,6 +1,5 @@
-import { Pressable } from "react-native";
 import { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Image, Pressable } from "react-native";
 const patientData = [{
   id: 1,
   name: "John Doe",
@@ -165,13 +164,11 @@ const PatientScreen = () => {
         <View style={styles.patientList}>
           {patientData.map(patient => <PatientRecord key={patient.id} patient={patient} onPress={() => setSelectedPatient(patient)} />)}
           <View style={styles.aHncWoIq}>
-            
-              <Pressable><Text style={styles.baIKEoGz}>
-                Patient View
-                  
-                
-              </Text></Pressable>
-            
+            <Pressable onPress={() => navigation.navigate("Untitled4", {
+            selectedPatient
+          })}>
+              <Text style={styles.baIKEoGz}>Patient View</Text>
+            </Pressable>
           </View>
         </View>
         <View style={styles.patientDetails}>
