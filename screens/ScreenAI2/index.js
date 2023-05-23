@@ -46,8 +46,7 @@ const PatientPortalScreen = ({
           </View>
           <View style={styles.columnRight}>
             <View style={styles.card}>
-              <Text style={styles.alexionHeader}>Fighting aHUS Every Day
-            </Text>
+              <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
             </View>
           </View>
         </View>
@@ -84,6 +83,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   content: {
+    flexDirection: 'row',
     paddingHorizontal: 20,
     paddingVertical: 30
   },
