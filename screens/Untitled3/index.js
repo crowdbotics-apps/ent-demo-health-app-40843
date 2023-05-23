@@ -205,6 +205,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold"
   },
+  logo: {
+    width: 50,
+    height: 50,
+    marginRight: 10
+  },
   header: {
     backgroundColor: "#002E6C",
     paddingTop: 10,
