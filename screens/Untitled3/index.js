@@ -161,8 +161,11 @@ const PatientScreen = () => {
   const navigation = useNavigation();
   const [selectedPatient, setSelectedPatient] = useState(patientData[0]);
   return <View style={styles.container}>
-      <View style={styles.topBar}>
-        <Text style={styles.title}>{"Provider View"}</Text>
+      <View style={styles.header}>
+        <Image source={{
+        uri: "https://pbs.twimg.com/profile_images/1542807211604320256/Gmm47qxe_400x400.png"
+      }} style={styles.logo} />
+        <Text style={styles.title}>Patient Portal</Text>
       </View>
       <View style={styles.content}>
         <View style={styles.patientList}>
@@ -201,6 +204,14 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 24,
     fontWeight: "bold"
+  },
+  header: {
+    backgroundColor: "#002E6C",
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingHorizontal: 20,
+    flexDirection: "row",
+    alignItems: "center"
   },
   content: {
     flex: 1,

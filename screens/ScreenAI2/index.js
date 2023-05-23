@@ -80,6 +80,9 @@ const styles = StyleSheet.create({
   columnLeft: {
     width: 400
   },
+  columnRight: {
+    width: 400
+  },
   subtitle: {
     fontSize: 18,
     fontWeight: "bold",
