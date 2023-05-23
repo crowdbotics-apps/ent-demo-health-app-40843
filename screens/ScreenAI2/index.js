@@ -1,4 +1,3 @@
-import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
 const PatientPortalScreen = ({
@@ -10,7 +9,7 @@ const PatientPortalScreen = ({
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={{
-        uri: "https://tinyurl.com/42evm3m3"
+        uri: "https://pbs.twimg.com/profile_images/1542807211604320256/Gmm47qxe_400x400.png"
       }} style={styles.logo} />
         <Text style={styles.title}>Patient Portal</Text>
       </View>
@@ -57,16 +56,16 @@ const styles = StyleSheet.create({
     display: "grid"
   },
   header: {
-    backgroundColor: "#007AFF",
-    paddingTop: 50,
-    paddingBottom: 20,
+    backgroundColor: "#002E6C",
+    paddingTop: 10,
+    paddingBottom: 10,
     paddingHorizontal: 20,
     flexDirection: "row",
     alignItems: "center"
   },
   logo: {
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
     marginRight: 10
   },
   title: {
@@ -79,9 +78,6 @@ const styles = StyleSheet.create({
     paddingVertical: 30
   },
   columnLeft: {
-    width: 400
-  },
-  columnReft: {
     width: 400
   },
   subtitle: {

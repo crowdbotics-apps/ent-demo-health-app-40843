@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 import { useState } from "react";
@@ -190,9 +190,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   },
   topBar: {
-    height: 80,
-    backgroundColor: "#007AFF",
-    justifyContent: "center",
+    backgroundColor: "#002E6C",
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingHorizontal: 20,
+    flexDirection: "row",
     alignItems: "center"
   },
   title: {
