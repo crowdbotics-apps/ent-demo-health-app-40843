@@ -13,10 +13,10 @@ const PatientPortalScreen = ({
       }} style={styles.logo} />
         <Text style={styles.title}>Patient Portal</Text>
       </View>
+      <Text style={styles.subHeader}>
+        Welcome back, {patient?.name || "patient name"}
+      </Text>
       <View style={styles.content}>
-        <Text style={styles.subtitle}>
-          Welcome back, {patient?.name || "patient name"}
-        </Text>
         <View style={styles.columnLeft}>
           <View style={styles.card}>
             <Text style={styles.cardTitle}>Upcoming Appointments</Text>
@@ -44,12 +44,13 @@ const PatientPortalScreen = ({
               <Text style={styles.activityDate}>August 18th</Text>
             </View>
           </View>
-          <View style={styles.columnRight}>
+          
+        </View>
+        <View style={styles.columnRight}>
             <View style={styles.card}>
               <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
             </View>
           </View>
-        </View>
       </View>
     </ScrollView>;
 };
@@ -68,6 +69,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center"
   },
+  subHeader: {
+    fontSize: 18,
+    fontWeight: "bold",
+    margin: 20
+  },
   alexionHeader: {
     color: "#b52555",
     fontWeight: "semi-bold"
@@ -83,9 +89,9 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   content: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingHorizontal: 20,
-    paddingVertical: 30
+    paddingVertical: 10
   },
   columnLeft: {
     width: 400
