@@ -15,13 +15,19 @@ const PatientPortalScreen = ({
         <Text style={styles.title}>Patient Portal</Text>
       </View>
       <View style={styles.content}>
-        <Text style={styles.subtitle}>Welcome back, {patient?.name || 'patient name'}</Text>
+        <Text style={styles.subtitle}>
+          Welcome back, {patient?.name || "patient name"}
+        </Text>
         <View style={styles.columnLeft}>
           <View style={styles.card}>
             <Text style={styles.cardTitle}>Upcoming Appointments</Text>
             <View style={styles.appointment}>
-              <Text style={styles.appointmentTitle}>Dentist Appointment</Text>
-              <Text style={styles.appointmentDate}>Monday, August 23rd</Text>
+              <Text style={styles.appointmentTitle}>
+                {patient?.physicianNotes.recNextAppointment || "Next Appointment"}
+              </Text>
+              <Text style={styles.appointmentDate}>
+                {patient?.physicianNotes.recNextAppointment || "{next appointment placeholder}"}
+              </Text>
             </View>
             <View style={styles.appointment}>
               <Text style={styles.appointmentTitle}>Physical Therapy</Text>
@@ -73,6 +79,9 @@ const styles = StyleSheet.create({
     paddingVertical: 30
   },
   columnLeft: {
+    width: 400
+  },
+  columnReft: {
     width: 400
   },
   subtitle: {
