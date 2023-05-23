@@ -48,6 +48,9 @@ const PatientPortalScreen = ({
         <View style={styles.columnRight}>
           <View style={styles.card}>
             <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
+            <Image source={{
+            uri: "https://pbs.twimg.com/profile_images/1542807211604320256/Gmm47qxe_400x400.png"
+          }} style={styles.logo} />
           </View>
         </View>
       </View>
