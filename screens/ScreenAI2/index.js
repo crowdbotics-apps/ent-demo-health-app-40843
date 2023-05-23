@@ -48,10 +48,14 @@ const PatientPortalScreen = ({
         </View>
         <View style={styles.columnRight}>
           <View style={styles.card}>
-            <Pressable><View style={styles.row}>
-              <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
-              <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.logo} />
-            </View></Pressable>
+            <Pressable>
+              <View style={styles.row}>
+                <Text style={styles.alexionHeader}>
+                  Fighting aHUS Every Day
+                </Text>
+                <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.chevron} />
+              </View>
+            </Pressable>
           </View>
           <View style={styles.card}>
             <Text style={styles.alexionSubHeader}>
@@ -88,7 +92,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    display: "grid"
+    display: "grid",
+    position: "absolute"
   },
   header: {
     backgroundColor: "#002E6C",
@@ -107,13 +112,22 @@ const styles = StyleSheet.create({
     color: "#b52555",
     fontWeight: "700",
     width: 270,
-    height: 20
+    height: 20,
+    position: "absolute",
+    top: -10
   },
   alexionSubHeader: {
     color: "#002E6C",
     fontWeight: "400",
-    width: 355,
+    width: 200,
     height: 28
+  },
+  chevron: {
+    height: 40,
+    width: 10,
+    position: "absolute",
+    left: 354,
+    top: -20
   },
   logo: {
     width: 50,
@@ -176,7 +190,9 @@ const styles = StyleSheet.create({
     color: "#A9A9A9"
   },
   row: {
-    flexDirection: "row"
+    flexDirection: "row",
+    position: "absolute",
+    left: 0
   },
   zzxsPpis: {
     fontSize: 12,
