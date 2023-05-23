@@ -67,7 +67,7 @@ const PatientPortalScreen = ({
             <Image source={{
             uri: "https://alexion.com/-/media/alexion_comredesign/images/realstories/ahus/erica/erica-01-w.jpg?mw=2048"
           }} style={styles.contentImage} />
-            
+            <Text style={styles.zzxsPpis}></Text>
           </View>
         </View>
       </View>
