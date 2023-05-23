@@ -1,3 +1,5 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 const patientData = [{
@@ -155,6 +157,7 @@ const PatientDetails = ({
 };
 
 const PatientScreen = () => {
+  const navigation = useNavigation();
   const [selectedPatient, setSelectedPatient] = useState(patientData[0]);
   return <View style={styles.container}>
       <View style={styles.topBar}>
@@ -164,9 +167,13 @@ const PatientScreen = () => {
         <View style={styles.patientList}>
           {patientData.map(patient => <PatientRecord key={patient.id} patient={patient} onPress={() => setSelectedPatient(patient)} />)}
           <View style={styles.aHncWoIq}>
-            
+            <Pressable onPress={() => {
+            navigation.navigate("ScreenAI2", {
+              patient: "patientData[0]"
+            });
+          }}>
               <Text style={styles.baIKEoGz}>Patient View</Text>
-            
+            </Pressable>
           </View>
         </View>
         <View style={styles.patientDetails}>
