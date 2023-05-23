@@ -44,6 +44,12 @@ const PatientPortalScreen = ({
               <Text style={styles.activityDate}>August 18th</Text>
             </View>
           </View>
+          <View style={styles.columnRight}>
+            <View style={styles.card}>
+              <Text style={styles.alexionHeader}>Fighting aHUS Every Day
+            </Text>
+            </View>
+          </View>
         </View>
       </View>
     </ScrollView>;
@@ -62,6 +68,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     flexDirection: "row",
     alignItems: "center"
+  },
+  alexionHeader: {
+    color: "#b52555",
+    fontWeight: "semi-bold"
   },
   logo: {
     width: 50,
