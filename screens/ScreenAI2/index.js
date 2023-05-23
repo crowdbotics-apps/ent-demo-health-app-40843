@@ -70,7 +70,8 @@ const PatientPortalScreen = ({
             <Text style={styles.zzxsPpis}>
               aHUS affects both adults and children. Patients with aHUS can face
               a lifelong risk of TMA, which may lead to sudden, catastrophic,
-              and life-threatening damage to the kidney and other vital organs.1
+              and life-threatening damage to the kidney and other vital organs.
+            </Text><Text style={styles.zzxsPpis}>
               Historically, two thirds of patients with the most common mutation
               required kidney dialysis, had permanent kidney damage, or died
               within the first year after diagnosis, despite supportive care.2,3
@@ -113,12 +114,9 @@ const styles = StyleSheet.create({
     height: 28
   },
   logo: {
-    width: 27,
-    height: 26,
-    marginRight: 10,
-    position: "absolute",
-    left: 343,
-    top: -3
+    width: 50,
+    height: 50,
+    marginRight: 10
   },
   title: {
     color: "#fff",
@@ -181,7 +179,7 @@ const styles = StyleSheet.create({
   zzxsPpis: {
     fontSize: 12,
     width: 351,
-    height: 84,
+    height: 76,
     color: "#787879"
   }
 });
