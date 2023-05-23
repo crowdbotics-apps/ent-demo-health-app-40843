@@ -47,10 +47,10 @@ const PatientPortalScreen = ({
         </View>
         <View style={styles.columnRight}>
           <View style={styles.card}>
-            <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
-            <Image source={{
-            uri: "https://pbs.twimg.com/profile_images/1542807211604320256/Gmm47qxe_400x400.png"
-          }} style={styles.logo} />
+            <View style={styles.row}>
+              <Text style={styles.alexionHeader}>Fighting aHUS Every Day</Text>
+              <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.logo} />
+            </View>
           </View>
         </View>
       </View>
@@ -83,8 +83,8 @@ const styles = StyleSheet.create({
     height: 20
   },
   logo: {
-    width: 50,
-    height: 50,
+    width: 17,
+    height: 23,
     marginRight: 10
   },
   title: {
@@ -136,6 +136,9 @@ const styles = StyleSheet.create({
   },
   activityDate: {
     color: "#A9A9A9"
+  },
+  row: {
+    flexDirection: "row"
   }
 });
 export default PatientPortalScreen;
