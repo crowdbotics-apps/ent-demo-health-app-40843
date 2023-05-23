@@ -83,9 +83,12 @@ const styles = StyleSheet.create({
     height: 20
   },
   logo: {
-    width: 17,
-    height: 23,
-    marginRight: 10
+    width: 27,
+    height: 26,
+    marginRight: 10,
+    position: "absolute",
+    left: 343,
+    top: -3
   },
   title: {
     color: "#fff",
