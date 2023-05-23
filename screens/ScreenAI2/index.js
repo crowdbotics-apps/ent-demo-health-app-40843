@@ -15,7 +15,7 @@ const PatientPortalScreen = ({
         <Text style={styles.title}>Patient Portal</Text>
       </View>
       <View style={styles.content}>
-        <Text style={styles.subtitle}>Welcome back, John Doe</Text>
+        <Text style={styles.subtitle}>Welcome back, {patient?.name || 'patient name'}</Text>
         <View style={styles.columnLeft}>
           <View style={styles.card}>
             <Text style={styles.cardTitle}>Upcoming Appointments</Text>
@@ -40,7 +40,6 @@ const PatientPortalScreen = ({
             </View>
           </View>
         </View>
-        
       </View>
     </ScrollView>;
 };
