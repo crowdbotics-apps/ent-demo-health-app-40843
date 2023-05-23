@@ -1,3 +1,4 @@
+import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
 const PatientPortalScreen = ({
@@ -53,20 +54,17 @@ const PatientPortalScreen = ({
             </View>
           </View>
           <View style={styles.card}>
-
-              <Text style={styles.alexionSubHeader}>
-                What is atypical hemolytic uremic syndrome (aHUS)?
-              </Text>
-              <Text style={styles.zzxsPpis}>
-                aHUS is a genetic, chronic, ultra-rare disease that can
-                progressively damage vital organs, such as the kidneys. aHUS is
-                caused by genetic abnormalities that result in chronic
-                uncontrolled complement activation, leading to
-                complement-mediated thrombotic microangiopathy (TMA)—the
-                formation of blood clots in small blood vessels throughout the
-                body.1
-              </Text>
-
+            <Text style={styles.alexionSubHeader}>
+              What is atypical hemolytic uremic syndrome (aHUS)?
+            </Text>
+            <Text style={styles.zzxsPpis}>
+              aHUS is a genetic, chronic, ultra-rare disease that can
+              progressively damage vital organs, such as the kidneys. aHUS is
+              caused by genetic abnormalities that result in chronic
+              uncontrolled complement activation, leading to complement-mediated
+              thrombotic microangiopathy (TMA)—the formation of blood clots in
+              small blood vessels throughout the body.1
+            </Text>
           </View>
         </View>
       </View>
