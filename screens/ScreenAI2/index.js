@@ -91,11 +91,14 @@ const PatientPortalScreen = ({
             <Text style={styles.link} onPress={() => Linking.openURL("mailto:ProductComplaints@alexion.com")}>
               Email
             </Text>
-            <Text style={styles.linkSubText}>For medical information on Kanuma, Koselugo, Soliris, Strensiq or Ultomiris</Text>
+            <Text style={styles.linkSubText}>
+              For medical information on Kanuma, Koselugo, Soliris, Strensiq or
+              Ultomiris
+            </Text>
             <Text style={styles.link} onPress={() => Linking.openURL("https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/us/en/amp-form.html")}>
               Submit a Medical Information Inquiry
             </Text>
-            
+
             <Text style={styles.linkSubText}>
               Report an issue or complaint with an Alexion product
             </Text>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 import { useState } from "react";
@@ -14,6 +14,7 @@ const patientData = [{
   date: "2021-10-01",
   lastAppointment: "2023-03-24",
   phone: "555-501-1234",
+  email: 'anonymous7891@protonmail.com',
   physicianNotes: {
     physicianName: "Dr. Nakamura",
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
@@ -30,6 +31,7 @@ const patientData = [{
   date: "2021-09-28",
   lastAppointment: "2023-02-12",
   phone: "555-501-1234",
+  email: 'discreetmailer23@gmail.com',
   physicianNotes: {
     physicianName: "Dr. Smith",
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
@@ -46,6 +48,7 @@ const patientData = [{
   date: "2021-09-25",
   lastAppointment: "2023-01-03",
   phone: "555-501-1234",
+  email: 'incognito426@outlook.com',
   physicianNotes: {
     physicianName: "Dr. Sayed",
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
@@ -62,6 +65,7 @@ const patientData = [{
   date: "2021-09-25",
   lastAppointment: "2023-05-01",
   phone: "555-501-1234",
+  email: 'phantominbox57@yahoo.com',
   physicianNotes: {
     physicianName: "Dr. Jankowski",
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
@@ -78,6 +82,7 @@ const patientData = [{
   date: "2021-09-25",
   lastAppointment: "2023-04-04",
   phone: "555-501-1234",
+  email: 'discreetmasker12@hotmail.com',
   physicianNotes: {
     physicianName: "Dr. Lee",
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
@@ -94,6 +99,7 @@ const patientData = [{
   date: "2021-09-25",
   lastAppointment: "2023-03-12",
   phone: "555-501-1234",
+  email: 'hiddenidentity88@gmail.com',
   physicianNotes: {
     physicianName: "Dr. Flores",
     generalNotes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices ornare lorem, nec hendrerit enim commodo eu. Sed nec magna viverra, commodo purus at, volutpat mauris. Vestibulum sed nisl et neque ullamcorper consectetur. Suspendisse potenti. Nulla eu purus pellentesque, tempor nulla non, ornare risus. Mauris mollis leo quis iaculis eleifend. In congue dolor nulla, sed aliquam tellus consectetur a. Donec id feugiat velit, ut dapibus nisi. Nam tempus turpis et iaculis placerat. Aliquam nunc orci, tempor fringilla gravida non, varius vel purus. Quisque vestibulum ut dui sit amet rutrum. Nulla volutpat sem ut ante semper facilisis. Cras imperdiet quam facilisis nulla vulputate, vitae accumsan elit bibendum. Morbi pulvinar leo ut enim dignissim, ac volutpat tellus posuere. Sed lobortis enim a tellus mollis, sit amet lobortis justo tristique. Nunc faucibus rhoncus risus a convallis. Pellentesque vel hendrerit risus. Morbi ut eleifend tortor, vitae tempor est.",
