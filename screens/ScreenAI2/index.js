@@ -1,4 +1,5 @@
 import React from "react";
+import { Divider } from '@rneui/themed';
 import { Linking } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
@@ -83,18 +84,20 @@ const PatientPortalScreen = ({
             <Text style={styles.linkSubText}>
               Personalized Patient Support from Alexion
             </Text>
-            <Text style={styles.link} onPress={() => Linking.openURL("tel:1-888-765-4747")}>
-              1-888-765-4747,
-            </Text>
-            <Text style={styles.link} onPress={() => Linking.openURL("mailto:ProductComplaints@alexion.com")}>
-              Email
-            </Text>
-            <Text style={styles.linkSubText}>
-              For medical information on Kanuma, Koselugo, Soliris, Strensiq or
-              Ultomiris
-            </Text>
             <Text style={styles.link} onPress={() => Linking.openURL("https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/us/en/amp-form.html")}>
               Submit a Medical Information Inquiry
+            </Text>
+            <Divider inset={true} insetType="middle" />
+            <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
+            <Text style={styles.linkSubText}>
+              To report an adverse event experience for any Alexion product,
+              please contact us
+            </Text>
+            <Text style={styles.link} onPress={() => Linking.openURL("tel:1-844-259-6783")}>
+              1-888-765-4747
+            </Text>
+            <Text style={styles.link} onPress={() => Linking.openURL("mailto:adverseeventreporting@alexion.com")}>
+              Email
             </Text>
 
             <Text style={styles.linkSubText}>
