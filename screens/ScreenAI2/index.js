@@ -149,14 +149,14 @@ const styles = StyleSheet.create({
   },
   contentImage: {
     height: 143,
-    width: 356,
+    width: "auto",
     marginVertical: 15
   },
   columnLeft: {
-    width: 400
+    flex: 3
   },
   columnRight: {
-    width: 400,
+    flex: 4,
     marginLeft: 25
   },
   card: {
@@ -173,13 +173,10 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     margintTop: 0,
     marginLeft: 5,
-    fontWeight: "700",
-    width: 270,
-    height: 20
+    fontWeight: "700"
   },
   linkSubText: {
     fontSize: 12,
-    width: 351,
     color: "#787879",
     marginLeft: 5,
     marginBottom: 15
@@ -213,7 +210,6 @@ const styles = StyleSheet.create({
   },
   zzxsPpis: {
     fontSize: 12,
-    width: 351,
     color: "#787879",
     margin: 5
   }
