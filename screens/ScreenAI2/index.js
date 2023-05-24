@@ -1,3 +1,4 @@
+import React from "react";
 import { Pressable } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
