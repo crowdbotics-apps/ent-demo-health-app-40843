@@ -109,9 +109,7 @@ const PatientPortalScreen = ({
               Email
             </Text>
 
-            <Text style={styles.linkSubText}>
-              Report an issue or complaint with an Alexion product
-            </Text>
+            
           </View>
         </View>
       </View>
