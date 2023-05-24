@@ -1,3 +1,4 @@
+import React from "react";
 import { Linking } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
@@ -76,7 +77,7 @@ const PatientPortalScreen = ({
         </View>
         <View style={styles.columnRight}>
           <View style={styles.card}>
-            <Text style={styles.alexionSubHeader}>Support Links</Text>
+            <Text style={styles.alexionSubHeader}>Resources</Text>
 
             <Text style={styles.link} onPress={() => Linking.openURL("https://alexion.com/our-inspiration/support-services")}>
               OneSource
@@ -84,20 +85,21 @@ const PatientPortalScreen = ({
             <Text style={styles.linkSubText}>
               Personalized Patient Support from Alexion
             </Text>
+            <Text style={styles.link} onPress={() => Linking.openURL("tel:1-888-765-4747")}>
+              1-888-765-4747,
+            </Text>
+            <Text style={styles.link} onPress={() => Linking.openURL("mailto:ProductComplaints@alexion.com")}>
+              Email
+            </Text>
+            <Text style={styles.linkSubText}>For medical information on Kanuma, Koselugo, Soliris, Strensiq or Ultomiris</Text>
+            <Text style={styles.link} onPress={() => Linking.openURL("https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/us/en/amp-form.html")}>
+              Submit a Medical Information Inquiry
+            </Text>
+            
+            <Text style={styles.linkSubText}>
+              Report an issue or complaint with an Alexion product
+            </Text>
           </View>
-          <Image source={{
-          uri: "https://alexion.com/-/media/alexion_comredesign/images/realstories/ahus/erica/erica-01-w.jpg?mw=2048"
-        }} style={styles.contentImage} />
-          <Text style={styles.zzxsPpis}>
-            aHUS affects both adults and children. Patients with aHUS can face a
-            lifelong risk of TMA, which may lead to sudden, catastrophic, and
-            life-threatening damage to the kidney and other vital organs.
-          </Text>
-          <Text style={styles.zzxsPpis}>
-            Historically, two thirds of patients with the most common mutation
-            required kidney dialysis, had permanent kidney damage, or died
-            within the first year after diagnosis, despite supportive care.2,3
-          </Text>
         </View>
       </View>
     </ScrollView>;
@@ -125,8 +127,6 @@ const styles = StyleSheet.create({
   alexionSubHeader: {
     color: "#002E6C",
     fontWeight: "700",
-    width: 351,
-    height: 39,
     marginBottom: 10,
     marginLeft: 5,
     fontSize: 16
@@ -169,7 +169,9 @@ const styles = StyleSheet.create({
   },
   link: {
     color: "#b52555",
-    margin: 5,
+    marginBottom: 0,
+    margintTop: 0,
+    marginLeft: 5,
     fontWeight: "700",
     width: 270,
     height: 20
@@ -177,7 +179,9 @@ const styles = StyleSheet.create({
   linkSubText: {
     fontSize: 12,
     width: 351,
-    color: "#787879"
+    color: "#787879",
+    marginLeft: 5,
+    marginBottom: 15
   },
   cardTitle: {
     fontSize: 16,
