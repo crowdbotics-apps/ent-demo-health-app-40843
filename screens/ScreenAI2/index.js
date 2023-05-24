@@ -25,7 +25,7 @@ const PatientPortalScreen = ({
             <View style={styles.appointment}>
               <Text style={styles.appointmentTitle}>Next Appointment</Text>
               <Text style={styles.appointmentDate}>
-                {patient?.physicianNotes.recNextAppointment}
+                {patient?.physicianNotes.recNextAppointment || "{next appointment placeholder}"}
               </Text>
               <Text style={styles.appointmentTitle}>Last Appointment</Text>
               <Text style={styles.appointmentDate}>
@@ -47,6 +47,12 @@ const PatientPortalScreen = ({
               <Text style={styles.activityTitle}>Prescription Refill</Text>
               <Text style={styles.activityDate}>August 18th</Text>
             </View>
+          </View>
+          <View style={styles.card}>
+            <Text style={styles.activityTitle}>Provider Details</Text>
+            <Text style={styles.activityDate}>
+              {patient?.physicianNotes.physicianName || "{Physician name placeholder}"}
+            </Text>
           </View>
         </View>
         <View style={styles.columnRight}>
