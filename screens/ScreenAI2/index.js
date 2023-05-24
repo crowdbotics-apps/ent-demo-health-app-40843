@@ -16,18 +16,16 @@ const PatientPortalScreen = ({
         <Text style={styles.title}>Patient Portal</Text>
       </View>
       <Text style={styles.subHeader}>
-        Welcome back, {patient?.name || "patient name"}
+        Welcome back, {patient?.name || "{patient name placeholder}"}
       </Text>
       <View style={styles.content}>
         <View style={styles.columnLeft}>
           <View style={styles.card}>
             <Text style={styles.cardTitle}>Upcoming Appointments</Text>
             <View style={styles.appointment}>
-              <Text style={styles.appointmentTitle}>
-                {patient?.physicianNotes.recNextAppointment || "Next Appointment"}
-              </Text>
+              <Text style={styles.appointmentTitle}>Next Appointment</Text>
               <Text style={styles.appointmentDate}>
-                {patient?.physicianNotes.recNextAppointment || "{next appointment placeholder}"}
+                next appointment placeholder
               </Text>
             </View>
             <View style={styles.appointment}>
