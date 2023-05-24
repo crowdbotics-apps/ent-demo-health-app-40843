@@ -9,6 +9,9 @@ const PatientPortalScreen = ({
   const {
     patient
   } = route.params || {};
+  console.log({
+    patient
+  });
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={{
