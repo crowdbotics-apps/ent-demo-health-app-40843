@@ -25,7 +25,7 @@ const PatientPortalScreen = ({
             <View style={styles.appointment}>
               <Text style={styles.appointmentTitle}>Next Appointment</Text>
               <Text style={styles.appointmentDate}>
-                next appointment placeholder
+                {patient?.physicianNotes.recNextAppointment}
               </Text>
             </View>
             <View style={styles.appointment}>
@@ -69,7 +69,7 @@ const PatientPortalScreen = ({
             <Text style={styles.zzxsPpis}>
               Historically, two thirds of patients with the most common mutation
               required kidney dialysis, had permanent kidney damage, or died
-              within the first year after diagnosis, despite supportive care.2,3
+              within the first year after diagnosis, despite supportive care.
             </Text>
           </View>
         </View>
@@ -187,8 +187,6 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   appointment: {
-    flexDirection: "row",
-    justifyContent: "space-between",
     marginBottom: 10
   },
   appointmentTitle: {
@@ -198,7 +196,6 @@ const styles = StyleSheet.create({
     color: "#787879"
   },
   activity: {
-    flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: 10
   },
