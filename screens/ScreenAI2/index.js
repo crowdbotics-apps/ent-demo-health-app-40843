@@ -96,6 +96,11 @@ const PatientPortalScreen = ({
             <Text style={styles.link} onPress={() => Linking.openURL("https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/us/en/amp-form.html")}>
               Submit a Medical Information Inquiry
             </Text>
+            <Text style={styles.link} onPress={() => Linking.openURL("tel:1-844-259-6783")}>
+              1-888-765-4747
+            </Text>
+            <Text style={styles.linkSubText}>For medical information on Kanuma, Koselugo, Soliris, Strensiq or Ultomiris, please call or submit an electronic Medical Information Inquiry. Links above</Text>
+            
 
             <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
             <Text style={styles.linkSubText}>
@@ -103,13 +108,11 @@ const PatientPortalScreen = ({
               please contact us
             </Text>
             <Text style={styles.link} onPress={() => Linking.openURL("tel:1-844-259-6783")}>
-              1-888-765-4747
+              1-844-259-6783
             </Text>
             <Text style={styles.link} onPress={() => Linking.openURL("mailto:adverseeventreporting@alexion.com")}>
               Email
             </Text>
-
-            
           </View>
         </View>
       </View>
