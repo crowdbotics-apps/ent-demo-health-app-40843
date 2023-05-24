@@ -1,5 +1,4 @@
 import React from "react";
-import { Divider } from "@rneui/themed";
 import { Linking } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
