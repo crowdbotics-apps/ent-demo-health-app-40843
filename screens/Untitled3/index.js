@@ -115,7 +115,7 @@ const PatientRecord = ({
       <View style={styles.patientInfo}>
         <Text style={styles.patientName}>{patient.name}</Text>
         <Text style={styles.patientAge}>{patient.age} years old</Text>
-        <Text style={styles.patientAge}>{patient.diagnosis}</Text>
+        <Text style={styles.patientDiag}>{patient.diagnosis}</Text>
       </View>
     </TouchableOpacity>;
 };
@@ -147,9 +147,10 @@ const PatientDetails = ({
           {patient.lastAppointment}
         </Text>
         <Text style={styles.recNextAppt}>
-          Physician recommended next appointment:{" "}
+          Physician recommended next appointment:
           {patient.physicianNotes.recNextAppointment}
         </Text>
+        <Text style={styles.recNextAppt}>Email: {patient.email}</Text>
         <Text style={styles.physicianNotesHeader}>Physician Notes: </Text>
         <Text style={styles.physicianNotes}>
           {patient.physicianNotes.generalNotes}
@@ -240,6 +241,10 @@ const styles = StyleSheet.create({
   },
   patientAge: {
     fontSize: 14,
+    color: "#666"
+  },
+  patientDiag: {
+    fontSize: 10,
     color: "#666"
   },
   patientDetails: {
