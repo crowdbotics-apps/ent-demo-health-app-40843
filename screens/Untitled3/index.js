@@ -174,9 +174,7 @@ const PatientScreen = () => {
           {patientData.map(patient => <PatientRecord key={patient.id} patient={patient} onPress={() => setSelectedPatient(patient)} />)}
           <View style={styles.aHncWoIq}>
             <Pressable onPress={() => {
-            navigation.navigate("ScreenAI2", {
-              patient: "patientData[0]"
-            });
+            console.log(patient);
           }}>
               <Text style={styles.baIKEoGz}>Patient View</Text>
             </Pressable>
