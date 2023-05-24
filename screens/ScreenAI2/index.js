@@ -7,7 +7,7 @@ const PatientPortalScreen = ({
 }) => {
   const {
     patient
-  } = route.params || {};
+  } = route?.params || {};
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={{
@@ -86,7 +86,7 @@ const PatientPortalScreen = ({
             <Text style={styles.link} onPress={() => Linking.openURL("https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/us/en/amp-form.html")}>
               Submit a Medical Information Inquiry
             </Text>
-            <Divider inset={true} insetType="middle" />
+            
             <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
             <Text style={styles.linkSubText}>
               To report an adverse event experience for any Alexion product,
