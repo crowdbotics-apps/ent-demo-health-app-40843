@@ -1,5 +1,6 @@
 import React from "react";
 import { Pressable } from "react-native";
+import { Linking } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
 const PatientPortalScreen = ({
@@ -51,9 +52,6 @@ const PatientPortalScreen = ({
           <View style={styles.card}>
             <Pressable>
               <View style={styles.row}>
-                <Text style={styles.alexionHeader}>
-                  Fighting aHUS Every Day
-                </Text>
                 <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.chevron} />
               </View>
             </Pressable>
@@ -69,6 +67,40 @@ const PatientPortalScreen = ({
               uncontrolled complement activation, leading to complement-mediated
               thrombotic microangiopathy (TMA)—the formation of blood clots in
               small blood vessels throughout the body.
+            </Text>
+            <Image source={{
+            uri: "https://alexion.com/-/media/alexion_comredesign/images/realstories/ahus/erica/erica-01-w.jpg?mw=2048"
+          }} style={styles.contentImage} />
+            <Text style={styles.zzxsPpis}>
+              aHUS affects both adults and children. Patients with aHUS can face
+              a lifelong risk of TMA, which may lead to sudden, catastrophic,
+              and life-threatening damage to the kidney and other vital organs.
+            </Text>
+            <Text style={styles.zzxsPpis}>
+              Historically, two thirds of patients with the most common mutation
+              required kidney dialysis, had permanent kidney damage, or died
+              within the first year after diagnosis, despite supportive care.2,3
+            </Text>
+          </View>
+        </View>
+        <View style={styles.columnRight}>
+          <View style={styles.card}>
+            <Pressable>
+              <View style={styles.row}>
+                <Text style={styles.link} onPress={() => Linking.openURL("https://alexion.com/our-inspiration/support-services")}>
+                  OneSource
+                </Text>
+                <Text style={styles.zzxsPpis}>
+                  Personalized Patient Support from Alexion
+                </Text>
+                <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.chevron} />
+              </View>
+            </Pressable>
+          </View>
+          <View style={styles.card}>
+            <Text style={styles.alexionSubHeader}>Support Links</Text>
+            <Text style={styles.mlupvMdG} onPress={() => Linking.openURL("http://google.com")}>
+              Google
             </Text>
             <Image source={{
             uri: "https://alexion.com/-/media/alexion_comredesign/images/realstories/ahus/erica/erica-01-w.jpg?mw=2048"
@@ -152,17 +184,28 @@ const styles = StyleSheet.create({
     marginVertical: 15
   },
   columnLeft: {
-    width: 400,
-    marginRight: 15
+    width: 400
   },
   columnRight: {
-    width: 400
+    width: 400,
+    marginLeft: 25
   },
   card: {
     backgroundColor: "#F5F5F5",
     borderRadius: 10,
     padding: 20,
-    marginBottom: 20
+    marginBottom: 20,
+    shadowRadius: 7,
+    shadowColor: "#000",
+    shadowOpacity: 0.15
+  },
+  link: {
+    color: "#b52555",
+    fontWeight: "700",
+    width: 270,
+    height: 20,
+    position: "absolute",
+    top: -10
   },
   cardTitle: {
     fontSize: 16,
@@ -201,6 +244,9 @@ const styles = StyleSheet.create({
     width: 351,
     color: "#787879",
     margin: 5
+  },
+  mlupvMdG: {
+    color: "blue"
   }
 });
 export default PatientPortalScreen;
