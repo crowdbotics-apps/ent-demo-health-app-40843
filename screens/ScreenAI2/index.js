@@ -49,13 +49,7 @@ const PatientPortalScreen = ({
           </View>
         </View>
         <View style={styles.columnRight}>
-          <View style={styles.card}>
-            <Pressable>
-              <View style={styles.row}>
-                <Image source={require("./chevron_right_FILL0_wght400_GRAD0_opsz48.png")} style={styles.chevron} />
-              </View>
-            </Pressable>
-          </View>
+          
           <View style={styles.card}>
             <Text style={styles.alexionSubHeader}>
               What is atypical hemolytic uremic syndrome (aHUS)?
