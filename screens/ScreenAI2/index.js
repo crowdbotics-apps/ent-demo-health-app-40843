@@ -27,6 +27,10 @@ const PatientPortalScreen = ({
               <Text style={styles.appointmentDate}>
                 {patient?.physicianNotes.recNextAppointment}
               </Text>
+              <Text style={styles.appointmentTitle}>Last Appointment</Text>
+              <Text style={styles.appointmentDate}>
+                {patient?.physicianNotes.lastAppointment}
+              </Text>
             </View>
             <View style={styles.appointment}>
               <Text style={styles.appointmentTitle}>Physical Therapy</Text>
@@ -86,7 +90,7 @@ const PatientPortalScreen = ({
             <Text style={styles.link} onPress={() => Linking.openURL("https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/us/en/amp-form.html")}>
               Submit a Medical Information Inquiry
             </Text>
-            
+
             <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
             <Text style={styles.linkSubText}>
               To report an adverse event experience for any Alexion product,
