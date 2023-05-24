@@ -195,6 +195,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: "#b52555",
+    margin: 5,
     fontWeight: "700",
     width: 270,
     height: 20,
