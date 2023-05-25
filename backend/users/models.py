@@ -25,6 +25,7 @@ class User(AbstractUser):
     medication = models.CharField(null=True,blank=True,max_length=256,)
     phone = models.CharField(null=True,blank=True,max_length=256,)
     email = models.EmailField(null=True,blank=True,max_length=254,)
+    patientId = models.CharField(null=True,blank=True,max_length=256,)
     def get_absolute_url(self):
         return reverse('users:detail', kwargs={'username': self.username})
 class CallCenter(models.Model):
