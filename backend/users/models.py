@@ -20,6 +20,12 @@ class User(AbstractUser):
     """
     name = models.CharField(null=True,blank=True,max_length=255,)
     age = models.IntegerField(null=True,blank=True,)
-    gender = models.CharField(max_length=256,null=True,blank=True,)
+    gender = models.CharField(null=True,blank=True,max_length=256,)
+    image = models.URLField(null=True,blank=True,)
+    diagnosis = models.CharField(max_length=256,null=True,blank=True,)
+    medication = models.CharField(max_length=256,null=True,blank=True,)
+    date = models.DateField(null=True,blank=True,)
+    lastAppointment = models.DateField(null=True,blank=True,)
+    phone = models.CharField(max_length=256,null=True,blank=True,)
     def get_absolute_url(self):
         return reverse('users:detail', kwargs={'username': self.username})
