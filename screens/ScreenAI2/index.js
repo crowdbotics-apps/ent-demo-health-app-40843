@@ -1,4 +1,5 @@
 import React from "react";
+import { Divider } from 'react-native-elements';
 import { Linking } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
@@ -99,9 +100,12 @@ const PatientPortalScreen = ({
             <Text style={styles.link} onPress={() => Linking.openURL("tel:1-844-259-6783")}>
               1-888-765-4747
             </Text>
-            <Text style={styles.linkSubText}>For medical information on Kanuma, Koselugo, Soliris, Strensiq or Ultomiris, please call or submit an electronic Medical Information Inquiry. Links above</Text>
-            
-
+            <Text style={styles.linkSubText}>
+              For medical information on Kanuma, Koselugo, Soliris, Strensiq or
+              Ultomiris, please call or submit an electronic Medical Information
+              Inquiry. Links above
+            </Text>
+            <Divider inset={true} insetType="middle" />
             <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
             <Text style={styles.linkSubText}>
               To report an adverse event experience for any Alexion product,
