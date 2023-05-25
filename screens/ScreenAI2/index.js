@@ -1,5 +1,4 @@
 import React from "react";
-import { Divider } from 'react-native-elements';
 import { Linking } from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 
@@ -105,7 +104,7 @@ const PatientPortalScreen = ({
               Ultomiris, please call or submit an electronic Medical Information
               Inquiry. Links above
             </Text>
-            <Divider inset={true} insetType="middle" />
+
             <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
             <Text style={styles.linkSubText}>
               To report an adverse event experience for any Alexion product,
