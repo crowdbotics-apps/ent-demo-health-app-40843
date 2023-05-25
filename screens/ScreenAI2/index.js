@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
   },
   contentImage: {
     height: 143,
-    width: "auto",
+    width: 'auto',
     marginVertical: 15
   },
   columnLeft: {
