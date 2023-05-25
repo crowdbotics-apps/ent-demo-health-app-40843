@@ -21,7 +21,6 @@ class User(AbstractUser):
     name = models.CharField(null=True,blank=True,max_length=255,)
     age = models.IntegerField(null=True,blank=True,)
     gender = models.CharField(null=True,blank=True,max_length=256,)
-    image = models.URLField(null=True,blank=True,)
     diagnosis = models.CharField(null=True,blank=True,max_length=256,)
     medication = models.CharField(null=True,blank=True,max_length=256,)
     phone = models.CharField(null=True,blank=True,max_length=256,)
