@@ -324,6 +324,7 @@ const styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 14,
     borderRadius: 0,
+    marginBottom: 20,
     position: "absolute",
     top: 13,
     left: 18,
