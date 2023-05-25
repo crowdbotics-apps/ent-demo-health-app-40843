@@ -29,7 +29,7 @@ const PatientPortalScreen = ({
               </Text>
               <Text style={styles.appointmentTitle}>Last Appointment</Text>
               <Text style={styles.appointmentDate}>
-                {patient?.physicianNotes.lastAppointment || "{last appointment placeholder}"}
+                {patient?.lastAppointment || "{last appointment placeholder}"}
               </Text>
             </View>
             <View style={styles.appointment}>
