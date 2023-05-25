@@ -32,6 +32,30 @@ function rest_auth_logout_retrieve(payload) {
 function rest_auth_logout_create(payload) {
   return entdemohealthinsAPI.post(`/rest-auth/logout/`)
 }
+function api_v1_callcenter_list(payload) {
+  return entdemohealthinsAPI.get(`/api/v1/callcenter/`)
+}
+function api_v1_callcenter_create(payload) {
+  return entdemohealthinsAPI.post(`/api/v1/callcenter/`, payload.data)
+}
+function api_v1_callcenter_retrieve(payload) {
+  return entdemohealthinsAPI.get(`/api/v1/callcenter/${payload.id}/`)
+}
+function api_v1_callcenter_update(payload) {
+  return entdemohealthinsAPI.put(
+    `/api/v1/callcenter/${payload.id}/`,
+    payload.data
+  )
+}
+function api_v1_callcenter_partial_update(payload) {
+  return entdemohealthinsAPI.patch(
+    `/api/v1/callcenter/${payload.id}/`,
+    payload.data
+  )
+}
+function api_v1_callcenter_destroy(payload) {
+  return entdemohealthinsAPI.delete(`/api/v1/callcenter/${payload.id}/`)
+}
 function rest_auth_registration_create(payload) {
   return entdemohealthinsAPI.post(`/rest-auth/registration/`, payload.data)
 }
@@ -63,6 +87,12 @@ export const apiService = {
   rest_auth_login_create,
   rest_auth_logout_retrieve,
   rest_auth_logout_create,
+  api_v1_callcenter_list,
+  api_v1_callcenter_create,
+  api_v1_callcenter_retrieve,
+  api_v1_callcenter_update,
+  api_v1_callcenter_partial_update,
+  api_v1_callcenter_destroy,
   rest_auth_registration_create,
   rest_auth_password_reset_create,
   rest_auth_password_change_create,
