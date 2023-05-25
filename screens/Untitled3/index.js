@@ -220,7 +220,10 @@ const styles = StyleSheet.create({
   patientList: {
     width: "25%",
     backgroundColor: "#F5F5F5",
-    padding: 20
+    paddingTop: 20,
+    paddingBottom: 20,
+    paddingLeft: 20,
+    paddingRight: 20
   },
   patientRecord: {
     flexDirection: "row",
@@ -250,7 +253,10 @@ const styles = StyleSheet.create({
   },
   patientDetails: {
     width: "75%",
-    padding: 20
+    paddingTop: 20,
+    paddingRight: 20,
+    paddingLeft: 20,
+    paddingBottom: 20
   },
   patientGender: {
     fontSize: 14,

@@ -29,7 +29,7 @@ const PatientPortalScreen = ({
               </Text>
               <Text style={styles.appointmentTitle}>Last Appointment</Text>
               <Text style={styles.appointmentDate}>
-                {patient?.physicianNotes.lastAppointment}
+                {patient?.physicianNotes.lastAppointment || "{last appointment placeholder}"}
               </Text>
             </View>
             <View style={styles.appointment}>
@@ -160,25 +160,28 @@ const styles = StyleSheet.create({
   },
   content: {
     flexDirection: "row",
-    paddingHorizontal: 20,
-    paddingVertical: 10
+    paddingLeft: 20,
+    paddingTop: 10
   },
   contentImage: {
     height: 143,
-    width: 'auto',
-    marginVertical: 15
+    width: "auto",
+    marginTop: 15,
+    marginBottom: 15
   },
   columnLeft: {
-    flex: 3
+    flexBasis: 300
   },
   columnRight: {
-    flex: 4,
+    flexBasis: 500,
     marginLeft: 25
   },
   card: {
     backgroundColor: "#F5F5F5",
     borderRadius: 10,
-    padding: 20,
+    paddingTop: 20,
+    paddingBottom: 20,
+    paddingLeft: 20,
     marginBottom: 20,
     shadowRadius: 7,
     shadowColor: "#000",
@@ -209,7 +212,8 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   },
   appointmentDate: {
-    color: "#787879"
+    color: "#787879",
+    marginBottom: 10
   },
   activity: {
     justifyContent: "space-between",
@@ -224,7 +228,10 @@ const styles = StyleSheet.create({
   zzxsPpis: {
     fontSize: 12,
     color: "#787879",
-    margin: 5
+    marginTop: 5,
+    marginBottom: 5,
+    marginRight: 5,
+    marginLeft: 5
   }
 });
 export default PatientPortalScreen;
