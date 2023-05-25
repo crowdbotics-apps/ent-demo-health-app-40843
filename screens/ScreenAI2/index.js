@@ -106,16 +106,17 @@ const PatientPortalScreen = ({
             </Text>
 
             <Text style={styles.alexionSubHeader}>Adverse Event Reporting</Text>
-            <Text style={styles.linkSubText}>
-              To report an adverse event experience for any Alexion product,
-              please contact us
-            </Text>
             <Text style={styles.link} onPress={() => Linking.openURL("tel:1-844-259-6783")}>
               1-844-259-6783
             </Text>
             <Text style={styles.link} onPress={() => Linking.openURL("mailto:adverseeventreporting@alexion.com")}>
               Email
             </Text>
+            <Text style={styles.linkSubText}>
+              To report an adverse event experience for any Alexion product,
+              please contact us
+            </Text>
+            
           </View>
         </View>
       </View>
