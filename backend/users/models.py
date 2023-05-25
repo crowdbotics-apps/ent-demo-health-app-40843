@@ -27,9 +27,16 @@ class User(AbstractUser):
     date = models.DateField(null=True,blank=True,)
     lastAppointment = models.DateField(null=True,blank=True,)
     phone = models.CharField(null=True,blank=True,max_length=256,)
-    email = models.EmailField(max_length=254,null=True,blank=True,)
-    physicianName = models.CharField(max_length=256,null=True,blank=True,)
+    email = models.EmailField(null=True,blank=True,max_length=254,)
+    physicianName = models.CharField(null=True,blank=True,max_length=256,)
     generalNotes = models.TextField(null=True,blank=True,)
     recNextAppointment = models.DateField(null=True,blank=True,)
     def get_absolute_url(self):
         return reverse('users:detail', kwargs={'username': self.username})
+class CallCenter(models.Model):
+    'Generated Model'
+    patientName = models.CharField(max_length=256,)
+    inbound = models.BooleanField()
+    outbound = models.BooleanField()
+    callNotes = models.TextField()
+    supportRepName = models.CharField(max_length=256,)
