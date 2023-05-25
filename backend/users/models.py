@@ -21,13 +21,10 @@ class User(AbstractUser):
     name = models.CharField(null=True,blank=True,max_length=255,)
     age = models.IntegerField(null=True,blank=True,)
     gender = models.CharField(null=True,blank=True,max_length=256,)
-    image = models.URLField(null=True,blank=True,)
     diagnosis = models.CharField(null=True,blank=True,max_length=256,)
     medication = models.CharField(null=True,blank=True,max_length=256,)
-    lastAppointment = models.DateField(null=True,blank=True,)
     phone = models.CharField(null=True,blank=True,max_length=256,)
     email = models.EmailField(null=True,blank=True,max_length=254,)
-    generalNotes = models.TextField(null=True,blank=True,)
     def get_absolute_url(self):
         return reverse('users:detail', kwargs={'username': self.username})
 class CallCenter(models.Model):
