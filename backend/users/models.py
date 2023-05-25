@@ -34,3 +34,4 @@ class CallCenter(models.Model):
     outbound = models.BooleanField()
     callNotes = models.TextField()
     supportRepName = models.CharField(max_length=256,)
+    patientId = models.ForeignKey("users.User",on_delete=models.CASCADE,null=True,blank=True,related_name="callcenter_patientId",)
