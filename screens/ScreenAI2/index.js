@@ -116,7 +116,6 @@ const PatientPortalScreen = ({
               To report an adverse event experience for any Alexion product,
               please contact us
             </Text>
-            
           </View>
         </View>
       </View>
