@@ -1,6 +1,6 @@
 import React from "react";
 import { Linking } from "react-native";
-import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
+import { View, Text, StyleSheet, Image, ScrollView, TextInput } from "react-native";
 
 const PatientPortalScreen = ({
   route
@@ -8,6 +8,7 @@ const PatientPortalScreen = ({
   const {
     patient
   } = route?.params || {};
+  const [text, onChangeText] = React.useState("");
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={{
@@ -49,10 +50,16 @@ const PatientPortalScreen = ({
             </View>
           </View>
           <View style={styles.card}>
-            <Text style={styles.activityTitle}>Provider Details</Text>
-            <Text style={styles.activityDate}>
-              {patient?.physicianNotes.physicianName || "{Physician name placeholder}"}
-            </Text>
+            <View style={styles.appointment}>
+              <Text style={styles.appointmentTitle}>Provider Details</Text>
+              <Text style={styles.appointmentDate}>
+                {patient?.physicianNotes.physicianName || "{Physician name placeholder}"}
+              </Text>
+            </View>
+            <View style={styles.appointment}>
+              <Text style={styles.appointmentTitle}>Find a New Provider</Text>
+              <TextInput style={styles.findProvider} placeholder="Enter your zip code" onChangeText={onChangeText} value={text} />
+            </View>
           </View>
         </View>
         <View style={styles.columnRight}>
@@ -214,6 +221,16 @@ const styles = StyleSheet.create({
   appointmentDate: {
     color: "#787879",
     marginBottom: 10
+  },
+  findProvider: {
+    color: "#787879",
+    height: 40,
+    marginVertical: 12,
+    width: "75%",
+    borderWidth: 1,
+    borderRadius: 5,
+    borderColor: "#787879",
+    padding: 10
   },
   activity: {
     justifyContent: "space-between",
