@@ -11,9 +11,7 @@ const PatientPortalScreen = ({
   const [text, onChangeText] = React.useState("");
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
-        <Image source={{
-        uri: "https://pbs.twimg.com/profile_images/1542807211604320256/Gmm47qxe_400x400.png"
-      }} style={styles.logo} />
+        
         <Text style={styles.title}>Patient Portal</Text>
       </View>
       <Text style={styles.subHeader}>
@@ -154,11 +152,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginLeft: 5,
     fontSize: 16
-  },
-  logo: {
-    width: 50,
-    height: 50,
-    marginRight: 10
   },
   title: {
     color: "#fff",
